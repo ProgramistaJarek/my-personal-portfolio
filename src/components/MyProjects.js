@@ -1,7 +1,7 @@
 function MyProjects({ date }) {
   return (
     <section className="my-projects container">
-      <h2>My Projects</h2>
+      <h2>Moje projekty</h2>
       <div className="my-projects-cards">
         {date.map((e, index) => (
           <div key={index} className="project">

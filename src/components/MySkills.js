@@ -13,7 +13,7 @@ import { SiTailwindcss, SiVisualstudiocode } from "react-icons/si";
 function MySkills() {
   return (
     <section className="my-skills container">
-      <h2>My Skills</h2>
+      <h2>Moje umiejętności</h2>
       <div className="skills">
         <div className="skill-card">
           <FaHtml5 className="skill-icon" />

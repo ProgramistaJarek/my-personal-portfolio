@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@400;700&display=swap');
+
 *,
 *::after,
 *::before {
@@ -14,6 +16,7 @@ body {
   background-color: #000c66;
   height: 100vh;
   color: white;
+  font-family: 'Prompt', sans-serif;
 }
 
 @layer components {
@@ -52,22 +55,26 @@ body {
   }
 
   .about-me-info {
-    @apply flex flex-col items-center;
+    @apply flex flex-col items-center mt-4;
   }
 
   /*.img {
     @apply w-72 h-72 bg-[#C4C4C4] mt-8 relative after:absolute after:content-[''] after:w-72 after:h-72 after:border-white after:border-4 after:left-3 after:top-3 after:-z-10;
-  }*/
+  }
+  .img {
+    @apply w-1/2 relative after:absolute after:content-[''] after:w-full after:h-full after:border-white after:border-4 after:left-3 after:top-3 after:-z-10;
+  }
+  */
 
   .img-test {
     @apply w-full;
   }
 
   .img {
-    @apply w-1/2 relative after:absolute after:content-[''] after:w-full after:h-full after:border-white after:border-4 after:left-3 after:top-3 after:-z-10;
+    @apply w-full relative;
   }
 
-  .about-me-info p {
+  .about-me-text {
     @apply mt-8;
   }
 
@@ -77,7 +84,7 @@ body {
   }
 
   .my-projects h2 {
-    @apply text-3xl text-[#7EC8E3];
+    @apply text-3xl text-[#7EC8E3] ;
   }
 
   .my-projects-cards {
@@ -189,19 +196,23 @@ body {
     }
 
     .about-me {
-      @apply min-h-full pt-0 mb-40;
+      @apply min-h-full pt-0 mb-16;
     }
 
     .about-me-info {
-      @apply flex-row items-start;
+      @apply flex-row items-start mt-8;
     }
 
     .img-test {
       @apply w-1/2 flex justify-center;
     }
 
-    .about-me-info p {
-      @apply w-1/2;
+    .img {
+      @apply w-3/4;
+    }
+
+    .about-me-text {
+      @apply w-1/2 text-left mt-0;
     }
 
     .my-projects-cards {

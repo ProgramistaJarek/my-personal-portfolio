@@ -2,19 +2,23 @@ export const date = {
   header: {
     id: 1,
     paragraph: {
-      first: "My name is",
-      second: "I am a",
+      first: "Nazywam się",
+      second: "Aspiruję na ",
     },
     span: {
       first: "Jarek",
-      second: "Front end developer",
+      second: "Junior front end developer",
     },
     imgUrl: "developer_activity_re_39tg.svg",
   },
   aboutMe: {
-    imgUrl: "public/hero.jpg",
+    imgUrl: "profile_details_re_ch9r.svg",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rutrum sit amet metus id tristique. Fusce tristique nulla in elementum egestas. Nam ultrices risus eget eros aliquam, quis mollis enim accumsan. Etiam lobortis efficitur leo, id consequat velit feugiat et. Proin pellentesque tortor quis sem viverra venenatis. Proin vehicula fringilla orci. Cras ultrices augue fringilla dui fermentum blandit. Sed rhoncus nulla sed nibh blandit rhoncus. Morbi sodales ut nisl a consequat.Vestibulum quis quam ex. Morbi euismod, justo eu sagittis mattis, ex massa rhoncus lacus, vel pretium erat neque vitae diam. Nam sed libero id lorem lobortis hendrerit sed vel leo. Maecenas eu massa elit. In ut dignissim odio, ut malesuada dui. Nullam fringilla commodo elit sit amet iaculis. Suspendisse porta purus et rutrum malesuada.",
+      "Cześć, z tej strony Jarek. Mieszkam na Śląsku oraz tutaj studiuję na Politechnice Śląskiej w Gliwicach.",
+    description2:
+      "Frontendem zainteresowałem się już w 2018 roku gdzie to miałem okazję odbyć miesięczne praktyki w Rimini. Tam też zbudowałem moją pierwszą, taką z prawdziwego zdarzenia stronę internetową, która miała kilka fajnych funkcjonalności. Na przykład umożliwiała rejestrację oraz następnie logowanie się użytkowników. Mieli oni możliwość dodawania komentarzy pod postami, które znowu mógł tylko dodawać admin. Ogólnie byłem z niej wtedy bardzo zadowolony i od tamtego czasu postanowiłem zainteresować się tym tematem - stronami internetowymi.",
+    description3:
+      "Historia, którą tu opowiedziałem jest krótka ale opowiada mniej więcej jak to wszystko się zaczęło i teraz chciałbym się jeszcze bardziej rozwiać w kierunku frontenda z czasem może nawet przejścia na backend.",
   },
   myProjects: [
     {

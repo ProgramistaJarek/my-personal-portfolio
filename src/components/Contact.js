@@ -26,7 +26,9 @@ function Contact() {
           <div className="social">
             <h3>You can contact me via:</h3>
             <div className="social-links">
-              <FaGithubSquare className="social-icon" />
+              <a href="https://github.com/ProgramistaJarek" target="_blank">
+                <FaGithubSquare className="social-icon" />
+              </a>
               <FaInstagram className="social-icon" />
               <FaLinkedin className="social-icon" />
             </div>
