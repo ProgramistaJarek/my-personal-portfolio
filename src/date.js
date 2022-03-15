@@ -24,7 +24,8 @@ export const date = {
     {
       imgUrl: "desktop-design.jpg",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisquerutrum sit amet metus id tristique. Fusce tristique nulla inelementum egestas. Aenean commodo turpis sapien, congue egestaslorem commodo sit amet. Quisque accumsan ante sed lacus accumsan dignissim.",
+        "Prosty design strony przedstawiający galerie produktu z możliwością dodania ile elementów chce się dodać do koszyka. Możliwość usunięcia elementów z koszyka. Zabezpieczenie przed dodaniem przez użytkownika 0 produktów - wyświetli się wtedy alert, że nie można dodać 0 produktów. Zabezpieczenie również przed dodaniem produktów na minusie - również wyświetli się alert.",
+      tech: ["react", "tailwindcss"],
       liveUrl:
         "https://programistajarek.github.io/ecommerce-product-page-main/",
       gitHubUrl:
@@ -33,7 +34,8 @@ export const date = {
     {
       imgUrl: "desktop-design2.jpg",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisquerutrum sit amet metus id tristique. Fusce tristique nulla inelementum egestas. Aenean commodo turpis sapien, congue egestaslorem commodo sit amet. Quisque accumsan ante sed lacus accumsan dignissim.",
+        "Aplikacja, która pobiera z bazy danych Advice Slip porady łącząc się z ich api. Użytkownik losowo losuję poradę z ich bazy. Strona przystosowana do działania na komputerach oraz na urządzeniach mobilnych",
+      tech: ["react", "tailwindcss", "api"],
       liveUrl: "https://programistajarek.github.io/advice-generator-app-main/",
       gitHubUrl:
         "https://github.com/ProgramistaJarek/advice-generator-app-main",
@@ -42,6 +44,7 @@ export const date = {
       imgUrl: "desktop-design3.jpg",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisquerutrum sit amet metus id tristique. Fusce tristique nulla inelementum egestas. Aenean commodo turpis sapien, congue egestaslorem commodo sit amet. Quisque accumsan ante sed lacus accumsan dignissim.",
+      tech: ["html", "sass"],
       liveUrl: "https://programistajarek.github.io/blogr-landing-page-main/",
       gitHubUrl: "https://github.com/ProgramistaJarek/blogr-landing-page-main",
     },
@@ -49,6 +52,7 @@ export const date = {
       imgUrl: "desktop-design4.jpg",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisquerutrum sit amet metus id tristique. Fusce tristique nulla inelementum egestas. Aenean commodo turpis sapien, congue egestaslorem commodo sit amet. Quisque accumsan ante sed lacus accumsan dignissim.",
+      tech: ["html", "sass"],
       liveUrl:
         "https://programistajarek.github.io/huddle-landing-page-with-curved-sections-master/",
       gitHubUrl:
