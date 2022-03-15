@@ -24,7 +24,7 @@ export const date = {
     {
       imgUrl: "desktop-design.jpg",
       description:
-        "Prosty design strony przedstawiający galerie produktu z możliwością dodania ile elementów chce się dodać do koszyka. Możliwość usunięcia elementów z koszyka. Zabezpieczenie przed dodaniem przez użytkownika 0 produktów - wyświetli się wtedy alert, że nie można dodać 0 produktów. Zabezpieczenie również przed dodaniem produktów na minusie - również wyświetli się alert.",
+        "Prosty i miły dla oka design strony przedstawiający galerie produktu z możliwością dodania ile elementów chce się dodać do koszyka. Możliwość usunięcia elementów z koszyka. Zabezpieczenie przed dodaniem przez użytkownika 0 produktów - wyświetli się wtedy alert, że nie można dodać 0 produktów. Zabezpieczenie również przed dodaniem produktów na minusie - również wyświetli się alert.",
       tech: ["react", "tailwindcss"],
       liveUrl:
         "https://programistajarek.github.io/ecommerce-product-page-main/",
@@ -43,7 +43,7 @@ export const date = {
     {
       imgUrl: "desktop-design3.jpg",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisquerutrum sit amet metus id tristique. Fusce tristique nulla inelementum egestas. Aenean commodo turpis sapien, congue egestaslorem commodo sit amet. Quisque accumsan ante sed lacus accumsan dignissim.",
+        "Stronę tę zbudowałem w oparciu o grafikę, którą pobrałem ze strony frontend mentor. Głównym założeniem podczas budowania tej strony było jak najdokładniejsze odwzorowanie jej z pobranej grafiki. Przy tym również poćwiczenie w głównej mierze używania flexboxa oraz sass.",
       tech: ["html", "sass"],
       liveUrl: "https://programistajarek.github.io/blogr-landing-page-main/",
       gitHubUrl: "https://github.com/ProgramistaJarek/blogr-landing-page-main",
@@ -51,7 +51,7 @@ export const date = {
     {
       imgUrl: "desktop-design4.jpg",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisquerutrum sit amet metus id tristique. Fusce tristique nulla inelementum egestas. Aenean commodo turpis sapien, congue egestaslorem commodo sit amet. Quisque accumsan ante sed lacus accumsan dignissim.",
+        "Strona podobnie jak do poprzedniej strony polegała na jak najdogładniejszym odwzorowaniu jej z grafiki. Tutaj również miałem okazję przećwiczyć moje umiejętności przy użyciu technologii sass.",
       tech: ["html", "sass"],
       liveUrl:
         "https://programistajarek.github.io/huddle-landing-page-with-curved-sections-master/",

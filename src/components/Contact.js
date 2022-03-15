@@ -26,11 +26,27 @@ function Contact() {
           <div className="social">
             <h3>You can contact me via:</h3>
             <div className="social-links">
-              <a href="https://github.com/ProgramistaJarek" target="_blank">
+              <a
+                href="https://github.com/ProgramistaJarek"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FaGithubSquare className="social-icon" />
               </a>
-              <FaInstagram className="social-icon" />
-              <FaLinkedin className="social-icon" />
+              <a
+                href="https://linkedin.com/in/jarosław-lepich-4a66471b2"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaLinkedin className="social-icon" />
+              </a>
+              <a
+                href="https://github.com/ProgramistaJarek"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaInstagram className="social-icon" />
+              </a>
             </div>
           </div>
         </div>

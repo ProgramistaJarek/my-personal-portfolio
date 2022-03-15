@@ -4,9 +4,9 @@ function MyProjects({ date }) {
       <h2>Moje projekty</h2>
       <div className="my-projects-cards">
         {date.map((e, index) => (
-          <div key={index} className="project">
+          <div key={e.imgUrl} className="project ">
             <div className="link-to-webiste">
-              <img src={e.imgUrl} alt="website" />
+              <img src={date.imgUrl} alt="website" />
               <div className="overlay"></div>
               <div className="buttons">
                 <a
@@ -27,7 +27,14 @@ function MyProjects({ date }) {
                 </a>
               </div>
             </div>
-            <p>{e.description}</p>
+            <div className="project-information">
+              <p>{e.description}</p>
+              <div className="project-skill">
+                {e.tech.map((e) => (
+                  <span>{e} </span>
+                ))}
+              </div>
+            </div>
           </div>
         ))}
       </div>
@@ -36,12 +43,3 @@ function MyProjects({ date }) {
 }
 
 export default MyProjects;
-
-// eslint-disable-next-line no-lone-blocks
-{
-  /* <button className="btn" type="button">
-                <a href={e.liveUrl} target="_blank" rel="noreferrer">
-                  Live
-                </a>
-              </button> */
-}

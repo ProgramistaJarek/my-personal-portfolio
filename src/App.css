@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@400;700&display=swap");
 
 *,
 *::after,
@@ -16,17 +16,21 @@ body {
   background-color: #000c66;
   height: 100vh;
   color: white;
-  font-family: 'Prompt', sans-serif;
+  font-family: "Prompt", sans-serif;
 }
 
 @layer components {
   .container {
-    @apply max-w-screen-xl px-6 mx-auto;
+    @apply max-w-screen-xl px-6 mx-auto my-12 first-of-type:mt-0;
   }
 
   /*----- header -----*/
   .header {
-    @apply h-screen flex flex-col items-center justify-center;
+    @apply h-screen flex;
+  }
+
+  .header-flex {
+    @apply flex flex-col justify-center;
   }
 
   .header img {
@@ -47,7 +51,7 @@ body {
 
   /*----- about-me -----*/
   .about-me {
-    @apply text-center min-h-screen pt-8;
+    @apply text-center min-h-screen;
   }
 
   .about-me h2 {
@@ -57,14 +61,6 @@ body {
   .about-me-info {
     @apply flex flex-col items-center mt-4;
   }
-
-  /*.img {
-    @apply w-72 h-72 bg-[#C4C4C4] mt-8 relative after:absolute after:content-[''] after:w-72 after:h-72 after:border-white after:border-4 after:left-3 after:top-3 after:-z-10;
-  }
-  .img {
-    @apply w-1/2 relative after:absolute after:content-[''] after:w-full after:h-full after:border-white after:border-4 after:left-3 after:top-3 after:-z-10;
-  }
-  */
 
   .img-test {
     @apply w-full;
@@ -80,11 +76,11 @@ body {
 
   /*----- my-projects -----*/
   .my-projects {
-    @apply min-h-screen text-center py-8;
+    @apply min-h-screen text-center;
   }
 
   .my-projects h2 {
-    @apply text-3xl text-[#7EC8E3] ;
+    @apply text-3xl text-[#7EC8E3];
   }
 
   .my-projects-cards {
@@ -95,8 +91,16 @@ body {
     @apply w-full my-4;
   }
 
-  .project p {
-    @apply w-full mt-2;
+  .project-information {
+    @apply w-full mt-4;
+  }
+
+  .project-skill {
+    @apply mt-4 uppercase font-bold tracking-wider;
+  }
+
+  .project-skill span {
+    @apply cursor-default hover:text-[#7EC8E3];
   }
 
   .link-to-webiste {
@@ -104,7 +108,7 @@ body {
   }
 
   .overlay {
-    @apply absolute top-0 left-0 h-full w-full opacity-0 bg-[rgba(0,0,0,0.3)];
+    @apply absolute top-0 left-0 h-full w-full opacity-0 bg-[rgba(0,0,0,0.4)] transition-opacity ease-linear duration-300;
   }
 
   .link-to-webiste:hover .btn,
@@ -117,12 +121,12 @@ body {
   }
 
   .btn {
-    @apply cursor-pointer opacity-0 py-1 px-4 mx-4 border-4 border-none bg-[#7EC8E3] rounded-lg uppercase font-bold tracking-wider hover:bg-[#0000FF];
+    @apply cursor-pointer opacity-0 py-1 px-4 mx-4 border-4 border-none bg-[#7EC8E3] rounded-lg uppercase font-bold tracking-wider hover:bg-[#0000FF] transition-all ease-linear delay-100 duration-150;
   }
 
   /*----- my-skills -----*/
   .my-skills {
-    @apply text-center pt-8;
+    @apply text-center;
   }
 
   .my-skills h2 {
@@ -138,7 +142,7 @@ body {
   }
 
   .skill-icon {
-    @apply w-16 h-16;
+    @apply w-16 h-16 hover:text-[#7EC8E3] transition-colors ease-linear duration-150;
   }
 
   /*----- contact -----*/
@@ -182,13 +186,17 @@ body {
     @apply flex;
   }
 
+  .social-links a {
+    @apply mr-6 mt-4;
+  }
+
   .social-icon {
-    @apply w-8 h-8 mr-6 mt-4 hover:text-[#7EC8E3] cursor-pointer;
+    @apply w-8 h-8 hover:text-[#7EC8E3] cursor-pointer transition-colors ease-linear duration-150;
   }
 
   @media screen and (min-width: 768px) {
-    .header {
-      @apply flex-row;
+    .header-flex {
+      @apply flex-row items-center;
     }
 
     .header img {
@@ -196,7 +204,7 @@ body {
     }
 
     .about-me {
-      @apply min-h-full pt-0 mb-16;
+      @apply min-h-full;
     }
 
     .about-me-info {
@@ -227,20 +235,16 @@ body {
       @apply flex-row-reverse;
     }
 
-    /* .project img {
-      @apply w-[49%];
-    } */
-
     .link-to-webiste {
       @apply w-[49%];
     }
 
-    .project p {
-      @apply w-2/5;
+    .project-information {
+      @apply text-left w-[45%] mt-0;
     }
 
-    .my-skills {
-      @apply my-16;
+    .project-skill {
+      @apply mt-4 uppercase font-bold tracking-wider;
     }
 
     .contact-flex {
@@ -255,7 +259,7 @@ body {
       @apply justify-end;
     }
 
-    .social-icon {
+    .social-links a{
       @apply mr-0 ml-6;
     }
   }
