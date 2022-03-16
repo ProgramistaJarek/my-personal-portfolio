@@ -13,7 +13,7 @@ function Header({ date }) {
             {date.paragraph.second} <span>{date.span.second}</span>
           </p>
         </div>
-        <img src={date.imgUrl} alt="svg" />
+        <img src={process.env.PUBLIC_URL + date.imgUrl} alt="svg" />
       </div>
     </header>
   );

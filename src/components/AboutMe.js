@@ -5,7 +5,7 @@ function AboutMe({ date }) {
       <div className="about-me-info">
         <div className="img-test">
           <div className="img">
-            <img src={date.imgUrl} alt="img-about-me" />
+            <img src={process.env.PUBLIC_URL + date.imgUrl} alt="img-about-me" />
           </div>
         </div>
         <div className="about-me-text">

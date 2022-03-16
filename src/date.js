@@ -9,10 +9,10 @@ export const date = {
       first: "Jarek",
       second: "Junior front end developer",
     },
-    imgUrl: "developer_activity_re_39tg.svg",
+    imgUrl: "/developer_activity_re_39tg.svg",
   },
   aboutMe: {
-    imgUrl: "profile_details_re_ch9r.svg",
+    imgUrl: "/profile_details_re_ch9r.svg",
     description:
       "Cześć, z tej strony Jarek. Mieszkam na Śląsku oraz tutaj studiuję na Politechnice Śląskiej w Gliwicach.",
     description2:
@@ -22,7 +22,7 @@ export const date = {
   },
   myProjects: [
     {
-      imgUrl: "desktop-design.jpg",
+      imgUrl: "/desktop-design.jpg",
       description:
         "Prosty i miły dla oka design strony przedstawiający galerie produktu z możliwością dodania ile elementów chce się dodać do koszyka. Możliwość usunięcia elementów z koszyka. Zabezpieczenie przed dodaniem przez użytkownika 0 produktów - wyświetli się wtedy alert, że nie można dodać 0 produktów. Zabezpieczenie również przed dodaniem produktów na minusie - również wyświetli się alert.",
       tech: ["react", "tailwindcss"],
@@ -32,7 +32,7 @@ export const date = {
         "https://github.com/ProgramistaJarek/ecommerce-product-page-main",
     },
     {
-      imgUrl: "desktop-design2.jpg",
+      imgUrl: "/desktop-design2.jpg",
       description:
         "Aplikacja, która pobiera z bazy danych Advice Slip porady łącząc się z ich api. Użytkownik losowo losuję poradę z ich bazy. Strona przystosowana do działania na komputerach oraz na urządzeniach mobilnych",
       tech: ["react", "tailwindcss", "api"],
@@ -41,7 +41,7 @@ export const date = {
         "https://github.com/ProgramistaJarek/advice-generator-app-main",
     },
     {
-      imgUrl: "desktop-design3.jpg",
+      imgUrl: "/desktop-design3.jpg",
       description:
         "Stronę tę zbudowałem w oparciu o grafikę, którą pobrałem ze strony frontend mentor. Głównym założeniem podczas budowania tej strony było jak najdokładniejsze odwzorowanie jej z pobranej grafiki. Przy tym również poćwiczenie w głównej mierze używania flexboxa oraz sass.",
       tech: ["html", "sass"],
@@ -49,7 +49,7 @@ export const date = {
       gitHubUrl: "https://github.com/ProgramistaJarek/blogr-landing-page-main",
     },
     {
-      imgUrl: "desktop-design4.jpg",
+      imgUrl: "/desktop-design4.jpg",
       description:
         "Strona podobnie jak do poprzedniej strony polegała na jak najdogładniejszym odwzorowaniu jej z grafiki. Tutaj również miałem okazję przećwiczyć moje umiejętności przy użyciu technologii sass.",
       tech: ["html", "sass"],

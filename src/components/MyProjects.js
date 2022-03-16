@@ -6,7 +6,7 @@ function MyProjects({ date }) {
         {date.map((e, index) => (
           <div key={e.imgUrl} className="project ">
             <div className="link-to-webiste">
-              <img src={date.imgUrl} alt="website" />
+              <img src={process.env.PUBLIC_URL + e.imgUrl} alt="website" />
               <div className="overlay"></div>
               <div className="buttons">
                 <a
