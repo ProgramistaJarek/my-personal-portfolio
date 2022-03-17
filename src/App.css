@@ -163,11 +163,11 @@ body {
   }
 
   .form input[type="text"] {
-    @apply p-1 rounded-lg outline-none text-[#050A30];
+    @apply p-2 px-4 outline-none text-white bg-transparent border-b-2 border-b-white;
   }
 
   .form textarea {
-    @apply p-1 rounded-lg outline-none text-[#050A30];
+    @apply p-2 px-4 outline-none text-white bg-transparent border-2 border-white;
   }
 
   .btn-form {

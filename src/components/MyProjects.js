@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-target-blank */
 function MyProjects({ date }) {
   return (
     <section className="my-projects container">
@@ -13,7 +14,7 @@ function MyProjects({ date }) {
                   className="btn"
                   href={e.liveUrl}
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener"
                 >
                   Live
                 </a>
@@ -21,7 +22,7 @@ function MyProjects({ date }) {
                   className="btn"
                   href={e.gitHubUrl}
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener"
                 >
                   Github
                 </a>
@@ -30,8 +31,8 @@ function MyProjects({ date }) {
             <div className="project-information">
               <p>{e.description}</p>
               <div className="project-skill">
-                {e.tech.map((e) => (
-                  <span>{e} </span>
+                {e.tech.map((e,index) => (
+                  <span key={index}>{e} </span>
                 ))}
               </div>
             </div>

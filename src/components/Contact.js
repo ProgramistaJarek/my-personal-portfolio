@@ -1,23 +1,64 @@
+import { useRef, useState } from "react";
 import { FaGithubSquare, FaInstagram, FaLinkedin } from "react-icons/fa";
+import emailjs from "@emailjs/browser";
 
 function Contact() {
+  const form = useRef();
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_6hvr8ag",
+        "template_lw3fqfr",
+        form.current,
+        "TEtFnTgmKn5JEyMlT"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          setEmail("");
+          setMessage("");
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
+  const updateEmail = (e) => {
+    setEmail(e.target.value);
+  };
+
+  const updateMessage = (e) => {
+    setMessage(e.target.value);
+  };
+
   return (
     <footer className="contact">
       <div className="container">
         <h2>Contact</h2>
         <div className="contact-flex">
-          <form className="form">
+          <form className="form" ref={form} onSubmit={sendEmail}>
             <label>
-              Name:
-              <input type="text" name="name" />
-            </label>
-            <label>
-              Number:
-              <input type="text" name="number" />
+              Email:
+              <input
+                type="text"
+                name="user_email"
+                value={email}
+                onChange={updateEmail}
+              />
             </label>
             <label>
               Message:
-              <textarea></textarea>
+              <textarea
+                name="message"
+                value={message}
+                onChange={updateMessage}
+              />
             </label>
             <button className="btn-form" type="submit">
               Send
