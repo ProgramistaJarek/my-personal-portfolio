@@ -6,10 +6,27 @@ function Contact() {
   const form = useRef();
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [styleInputText, setStyleInputText] = useState(false);
+  const [styleTextArea, setStyleTextArea] = useState(false);
+  const emailValid = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
 
-  const sendEmail = (e) => {
+  const validationEmail = (e) => {
     e.preventDefault();
 
+    if (email.match(emailValid)) {
+      setStyleInputText(false);
+      if (message === "") {
+        setStyleTextArea(true);
+      } else {
+        setStyleTextArea(false);
+        sendEmail();
+      }
+    } else {
+      setStyleInputText(true);
+    }
+  };
+
+  const sendEmail = () => {
     emailjs
       .sendForm(
         "service_6hvr8ag",
@@ -40,9 +57,9 @@ function Contact() {
   return (
     <footer className="contact">
       <div className="container">
-        <h2>Contact</h2>
+        <h2>Kontakt</h2>
         <div className="contact-flex">
-          <form className="form" ref={form} onSubmit={sendEmail}>
+          <form className="form" ref={form} onSubmit={validationEmail}>
             <label>
               Email:
               <input
@@ -50,22 +67,35 @@ function Contact() {
                 name="user_email"
                 value={email}
                 onChange={updateEmail}
+                className={
+                  styleInputText ? "text-input red-class-input" : "text-input"
+                }
               />
             </label>
             <label>
-              Message:
+              Wiadomość:
               <textarea
                 name="message"
                 value={message}
                 onChange={updateMessage}
+                className={
+                  styleTextArea ? "text-area red-class-textarea" : "text-area"
+                }
+                rows="5"
+                cols="45"
+                placeholder={
+                  styleTextArea
+                    ? "Jeśli chcesz już mi coś wysłać, napisz coś :)"
+                    : ""
+                }
               />
             </label>
             <button className="btn-form" type="submit">
-              Send
+              Wyślij
             </button>
           </form>
           <div className="social">
-            <h3>You can contact me via:</h3>
+            <h3>Znajdziesz mnie również tutaj:</h3>
             <div className="social-links">
               <a
                 href="https://github.com/ProgramistaJarek"

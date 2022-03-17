@@ -142,7 +142,7 @@ body {
   }
 
   .skill-icon {
-    @apply w-16 h-16 hover:text-[#7EC8E3] transition-colors ease-linear duration-150;
+    @apply w-16 h-16 hover:text-[#7EC8E3] transition-colors ease-linear duration-75;
   }
 
   /*----- contact -----*/
@@ -162,16 +162,24 @@ body {
     @apply flex flex-col mt-4 w-full;
   }
 
-  .form input[type="text"] {
-    @apply p-2 px-4 outline-none text-white bg-transparent border-b-2 border-b-white;
+  .text-input {
+    @apply p-2 px-4 outline-none text-white bg-transparent border-b-2 border-b-gray-500 focus:border-b-white hover:border-white transition-colors ease-linear duration-150;
   }
 
-  .form textarea {
-    @apply p-2 px-4 outline-none text-white bg-transparent border-2 border-white;
+  .red-class-input {
+    @apply border-b-red-500 focus:border-b-red-500 hover:border-red-500;
+  }
+
+  .text-area {
+    @apply p-2 px-4 outline-none text-white bg-transparent border-2 border-gray-500 focus:border-white hover:border-white transition-colors ease-linear duration-150;
+  }
+
+  .red-class-textarea {
+    @apply border-red-500 focus:border-red-500 hover:border-red-500;
   }
 
   .btn-form {
-    @apply py-1 px-4 rounded-lg bg-[#7EC8E3] text-[#050A30] font-bold tracking-wider my-4;
+    @apply py-1 px-4 rounded-lg bg-[#7EC8E3] text-[#050A30] font-bold tracking-widest my-4 hover:text-white;
   }
 
   .social {
@@ -191,7 +199,7 @@ body {
   }
 
   .social-icon {
-    @apply w-8 h-8 hover:text-[#7EC8E3] cursor-pointer transition-colors ease-linear duration-150;
+    @apply w-8 h-8 hover:text-[#7EC8E3] cursor-pointer transition-colors ease-linear duration-75;
   }
 
   @media screen and (min-width: 768px) {
@@ -252,14 +260,18 @@ body {
     }
 
     .form {
-      @apply w-80;
+      @apply items-start;
+    }
+
+    .text-input {
+      @apply w-1/2;
     }
 
     .social-links {
       @apply justify-end;
     }
 
-    .social-links a{
+    .social-links a {
       @apply mr-0 ml-6;
     }
   }
