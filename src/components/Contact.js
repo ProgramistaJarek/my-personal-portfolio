@@ -8,6 +8,7 @@ function Contact() {
   const [message, setMessage] = useState("");
   const [styleInputText, setStyleInputText] = useState(false);
   const [styleTextArea, setStyleTextArea] = useState(false);
+  const [buttonDisabled, setButtonDisabled] = useState(false);
   const emailValid = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
 
   const validationEmail = (e) => {
@@ -20,6 +21,7 @@ function Contact() {
       } else {
         setStyleTextArea(false);
         sendEmail();
+        setButtonDisabled(true);
       }
     } else {
       setStyleInputText(true);
@@ -39,6 +41,7 @@ function Contact() {
           console.log(result.text);
           setEmail("");
           setMessage("");
+          setButtonDisabled(false);
         },
         (error) => {
           console.log(error.text);
@@ -90,7 +93,15 @@ function Contact() {
                 }
               />
             </label>
-            <button className="btn-form" type="submit">
+            <button
+              className={
+                buttonDisabled
+                  ? "btn-form disabled:opacity-80 cursor-not-allowed"
+                  : "btn-form"
+              }
+              type="submit"
+              disabled={buttonDisabled}
+            >
               Wyślij
             </button>
           </form>
