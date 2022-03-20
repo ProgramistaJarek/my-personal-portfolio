@@ -34,7 +34,7 @@ function Contact() {
         "service_6hvr8ag",
         "template_lw3fqfr",
         form.current,
-        "TEtFnTgmKn5JEyMlT"
+        process.env.REACT_APP_API_KEY
       )
       .then(
         (result) => {
@@ -88,7 +88,7 @@ function Contact() {
                 cols="45"
                 placeholder={
                   styleTextArea
-                    ? "Jeśli chcesz już mi coś wysłać, napisz coś :)"
+                    ? "Nie wysyłaj mi pustej wiadomości, napisz coś :)"
                     : ""
                 }
               />
@@ -111,14 +111,14 @@ function Contact() {
               <a
                 href="https://github.com/ProgramistaJarek"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
               >
                 <FaGithubSquare className="social-icon" />
               </a>
               <a
                 href="https://linkedin.com/in/jarosław-lepich-4a66471b2"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
               >
                 <FaLinkedin className="social-icon" />
               </a>
@@ -132,7 +132,7 @@ function Contact() {
             </div>
           </div>
         </div>
-        <div class="Footer__Copyright">
+        <div className="Footer__Copyright">
           © · Jarosław Lepich · All rights reserved
         </div>
       </div>
