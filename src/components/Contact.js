@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import { FaGithubSquare, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
 import emailjs from "@emailjs/browser";
 
 function Contact() {
@@ -122,15 +122,18 @@ function Contact() {
               >
                 <FaLinkedin className="social-icon" />
               </a>
-              <a
+              {/* <a
                 href="https://github.com/ProgramistaJarek"
                 target="_blank"
                 rel="noreferrer"
               >
                 <FaInstagram className="social-icon" />
-              </a>
+              </a> */}
             </div>
           </div>
+        </div>
+        <div class="Footer__Copyright">
+          © · Jarosław Lepich · All rights reserved
         </div>
       </div>
     </footer>

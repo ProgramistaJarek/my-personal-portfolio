@@ -147,7 +147,7 @@ body {
 
   /*----- contact -----*/
   .contact {
-    @apply bg-[#050A30] pt-8 pb-12;
+    @apply bg-[#050A30] pt-8;
   }
 
   .contact h2 {
@@ -200,6 +200,10 @@ body {
 
   .social-icon {
     @apply w-8 h-8 hover:text-[#7EC8E3] cursor-pointer transition-colors ease-linear duration-75;
+  }
+
+  .Footer__Copyright {
+    @apply text-center pt-10 pb-4;
   }
 
   @media screen and (min-width: 768px) {
