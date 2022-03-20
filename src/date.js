@@ -43,20 +43,30 @@ export const date = {
     {
       imgUrl: "/desktop-design3.jpg",
       description:
-        "Stronę tę zbudowałem w oparciu o grafikę, którą pobrałem ze strony frontend mentor. Głównym założeniem podczas budowania tej strony było jak najdokładniejsze odwzorowanie jej z pobranej grafiki. Przy tym również poćwiczenie w głównej mierze używania flexboxa oraz sass.",
+        "Stronę tę zbudowałem w oparciu o grafikę, którą pobrałem ze strony frontend mentor. Głównym założeniem podczas budowania tej strony było jak najdokładniejsze odwzorowanie jej z pobranej grafiki. .",
       tech: ["html", "sass"],
-      liveUrl: "https://programistajarek.github.io/blogr-landing-page-main/",
-      gitHubUrl: "https://github.com/ProgramistaJarek/blogr-landing-page-main",
+      liveUrl:
+        "https://programistajarek.github.io/project-tracking-intro-component-master/",
+      gitHubUrl:
+        "https://github.com/ProgramistaJarek/project-tracking-intro-component-master",
     },
     {
       imgUrl: "/desktop-design4.jpg",
       description:
-        "Strona podobnie jak do poprzedniej strony polegała na jak najdogładniejszym odwzorowaniu jej z grafiki. Tutaj również miałem okazję przećwiczyć moje umiejętności przy użyciu technologii sass.",
+        "Strona podobnie jak do poprzedniej strony polegała na jak najdogładniejszym odwzorowaniu jej z grafiki. Przy tym również poćwiczenie w głównej mierze używania flexboxa oraz sass",
       tech: ["html", "sass"],
       liveUrl:
         "https://programistajarek.github.io/huddle-landing-page-with-curved-sections-master/",
       gitHubUrl:
         "https://github.com/ProgramistaJarek/huddle-landing-page-with-curved-sections-master",
+    },
+    {
+      imgUrl: "/desktop-design5.jpg",
+      description:
+        "Strona przy której mogłem sprawdzić oraz z testować przełącznik light/dark mode. Zrozumieć idea jak wdrożyć dark mode do strony internetowej.",
+      tech: ["html", "css"],
+      liveUrl: "https://programistajarek.github.io/social-media-challenge/",
+      gitHubUrl: "https://github.com/ProgramistaJarek/social-media-challenge",
     },
   ],
 };
