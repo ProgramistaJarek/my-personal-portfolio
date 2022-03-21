@@ -20,7 +20,6 @@ Project is created with:
 
 ## Live
 
-Here you can see my portfolio using github pages
 Here you can see my portfolio using github pages [Live](https://programistajarek.github.io/my-personal-portfolio/).
 
 # my-personal-portfolio
