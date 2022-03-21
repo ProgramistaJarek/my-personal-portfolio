@@ -1,6 +1,7 @@
 # Introduction
 
-This is my personal portfolio where I will be able to add and publish my project that I am most proud of. Also I have add a contact form using emailjs.
+This is my personal portfolio where I will be able to add and publish my project that I am most proud of. Also I have add a contact form using emailjs. 
+I am very happy with what I have created.
 
 ![Design preview](/public/jaroslawlepich-portfolio.png)
 
